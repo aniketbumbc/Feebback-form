@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+ onSubmit(form:any):void{
+   console.log('The Value Submitted:',form);
+ }
 }
