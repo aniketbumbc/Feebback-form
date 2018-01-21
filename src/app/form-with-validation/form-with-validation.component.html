@@ -1,0 +1,19 @@
+<h3> The validation form builders</h3>
+<form [formGroup]="myForm" (ngSubmit)="onSend(myForm.value)" [class.error]="!myForm.valid && myForm.touched">
+  <div [class.error]="!myForm.valid && name.touched">
+    <label for="inputName">Name:-</label>
+    <input type="text" id="inputName" placeholder="Name" [formControl]="name">
+    <div *ngIf="!myForm.controls['name'].valid">Please enter name</div>
+    <div *ngIf="!name.hasError('required')" class="errors"> Please name need</div> <br><br>
+
+
+
+    <label for="inputNam">Number:-</label>
+    <input type="text" id="inputNam" placeholder="Number" [formControl]="number">
+    <div *ngIf="!number.valid">Please enter Number</div>
+    <div *ngIf="!number.hasError('required')" class="errors"> Please Number need</div>
+    <div *ngIf="!myForm.valid">Form is Invalid</div>   <br><br>
+  </div>
+    <button type="submit">Check Validity </button>
+
+</form>
