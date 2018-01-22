@@ -1,13 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1 class="ui header">
+  <h1 class="ui header" >
     Welcome to Feedback Form
   </h1>
   <div class="ui raised segment">
     <form #f="ngForm" (ngSubmit)="onSubmit(f.value)" class="ui form">
       <div class="field">
         <label for="nameInput">Name</label>
-        <input type="text"  class="ui input" id="nameInput" placeholder="Name" name="name" ngModel> <br> <br>
+        <input type="text"  class="ui small icon input" id="nameInput" placeholder="Name" name="name" ngModel> <br> <br>
         <label for="emailInput">Email</label>
         <input type="email"  class="ui input" id="emailInput" placeholder="Email" name="email" ngModel><br> <br>
         <label for="ageInput">Age</label>
@@ -23,3 +23,5 @@
 
   <app-form-builder></app-form-builder>
   <app-form-with-validation></app-form-with-validation>
+  <h2>Implementation of Two-way data binding</h2>
+  <app-two-way></app-two-way>

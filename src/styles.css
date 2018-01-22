@@ -2,3 +2,10 @@
 import './app/vendor/semantic.min.css';
 */
 
+body{
+    color:rgb(23, 226, 23);
+    background: rgb(150, 50, 50);
+}
+h1{
+    color: burlywood;
+}

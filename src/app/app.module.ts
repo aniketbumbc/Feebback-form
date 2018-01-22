@@ -5,12 +5,14 @@ import{FormsModule,ReactiveFormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FormBuilderComponent } from './form-builder/form-builder.component';
 import { FormWithValidationComponent } from './form-with-validation/form-with-validation.component';
+import { TwoWayComponent } from './two-way/two-way.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormBuilderComponent,
-    FormWithValidationComponent
+    FormWithValidationComponent,
+    TwoWayComponent
   ],
   imports: [
     BrowserModule,
